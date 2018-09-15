@@ -1,0 +1,34 @@
+div.care-header {
+    background-image: url("../images/care-header-background.jpg");
+    background-attachment: fixed;
+    background-position: 292px -10px;
+}
+div.care-content>div.care-content__item {
+    margin-bottom: 20px; padding: 10px;
+    background-color: #E9E7F7;
+    transition: 700ms;
+}
+div.care-content>div.care-content__item:hover {
+    background-color: #e4e2f2;
+    transition: 300ms;
+}
+div.care-content__item>h2 {
+    text-align: center;
+    margin-top: 0;
+    color: rebeccapurple;
+}
+div.care-content>div.care-content__item>div>div:first-child {
+    float: left;
+    width: 301px;
+}
+div.care-content>div.care-content__item>div>div:first-child>img {
+    width: 301px;
+}
+div.care-content>div.care-content__item>div>div:nth-child(2) {
+    float: left;
+    width: 67%;
+    padding-left: 10px;
+}
+div.care-content>div.care-content__item>div>div:last-child {
+    clear: both;
+}

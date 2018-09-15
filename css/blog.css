@@ -1,0 +1,25 @@
+div.blog-header {
+    background-image: url("../images/blog-header-background.jpg");
+    background-attachment: fixed;
+    background-position: 292px -125px;
+}
+div.blog-content>div.blog-content__item {
+    margin-bottom: 20px; padding: 10px;
+    background-color: #E9E7F7;
+    transition: 700ms;
+}
+div.blog-content>div.blog-content__item:hover {
+    background-color: #e4e2f2;
+    transition: 300ms;
+}
+div.blog-content__item>h2 {
+    text-align: center;
+    margin-top: 0;
+    color: rebeccapurple;
+}
+div.page-bottom>div:first-child {
+    width: 100%; height: 40px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bolder;
+}

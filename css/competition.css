@@ -1,0 +1,35 @@
+div.competition-header {
+    background-image: url("../images/competition-header-background.jpg");
+    background-attachment: fixed;
+    background-position: 292px -10px;
+
+}
+div.competition-content>div.competition-content__item {
+    margin-bottom: 20px; padding: 10px;
+    background-color: #E9E7F7;
+    transition: 700ms;
+}
+div.competition-content>div.competition-content__item:hover {
+    background-color: #e4e2f2;
+    transition: 300ms;
+}
+div.competition-content__item>h2 {
+    text-align: center;
+    margin-top: 0;
+    color: rebeccapurple;
+}
+div.competition-content>div.competition-content__item>div>div:first-child {
+    float: left;
+    width: 301px;
+}
+div.competition-content>div.competition-content__item>div>div:first-child>img {
+    width: 301px;
+}
+div.competition-content>div.competition-content__item>div>div:nth-child(2) {
+    float: left;
+    width: 99%;
+    padding-left: 10px;
+}
+div.competition-content>div.competition-content__item>div>div:last-child {
+    clear: both;
+}
