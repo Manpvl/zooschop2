@@ -1,0 +1,43 @@
+div.page-header {
+    background-image: url("../images/about-page-header-background.jpg");
+    background-attachment: fixed;
+    background-position: 292px -10px;
+}
+div.about-page-header>h1 {
+    text-shadow: 0 0 10px #636363;
+}
+div.about-page-content>div.about-page-content__item {
+    margin-bottom: 20px; padding: 10px;
+    background-color: #E9E7F7;
+    transition: 700ms;
+}
+div.about-page-content>div.about-page-content__item:hover {
+    background-color: #e4e2f2;
+    transition: 300ms;
+}
+div.about-page-content__item>h2 {
+    text-align: center;
+    margin-top: 0;
+    color: rebeccapurple;
+}
+div.about-page-content>div.about-page-content__item>div>div:first-child {
+    float: left;
+    width: 230px;
+}
+div.about-page-content>div.about-page-content__item>div>div:nth-child(2) {
+    float: left;
+    width: 75%;
+    padding-left: 10px;
+}
+div.about-page-content>div.about-page-content__item>div>div:last-child {
+    clear: both;
+}
+div.about-page-content>div.about-page-content__item:nth-child(2)>div>div {
+    width: 500px;
+}
+div.about-page-content>div.about-page-content__item:nth-child(3)>div>div {
+    width: 100%;
+}
+div.about-page-content>div.about-page-content__item:nth-child(4)>div>div {
+    width: 100%;
+}
