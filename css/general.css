@@ -42,9 +42,9 @@ div.page-bottom>div.adres {
     font-style: italic; font-weight: bolder;
     padding: 10px;
 }
-form>span.”red-asterix” {
+.”red-asterix” {
     color: red;
 }
-form>label>span.”red-asterix” {
-    color: red;
+img {
+    box-shadow: 0 0 15px #5d5d5d;
 }
