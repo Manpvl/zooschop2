@@ -22,17 +22,40 @@ function getSiteName() {
     //console.log("Выводим название сайта" + siteName);
     //return siteName;
 }
-const menu =   `<a href="index.html">Главная</a> |
-                <a href="about.html">О компании</a> |
-                <a href="articl.html">Статьи</a> |
-                <a href="breed.html">Порода</a> |
-                <a href="rare.html">Редкие</a> |
-                <a href="care.html">Уход</a> |
-                <a href="competition.html">Конкурс</a> |
-                <a href="to_order.html">Заказ товара</a> |
-                <a href="contacts.html">Контакты</a> |
-                <a href="blog.html">Blog</a> |`
+const menu =   `
+            <a href="index.html" id="home-link" name="link">Главная</a> |
+            <a href="about.html">О компании</a> |
+            <a href="articl.html">Статьи</a> |
+            <a href="breed.html">Порода</a> |
+            <a href="rare.html">Редкие</a> |
+            <a href="care.html">Уход</a> |
+            <a href="competition.html">Конкурс</a> |
+            <a href="to_order.html">Заказ товара</a> |
+            <a href="contacts.html">Контакты</a> |
+            <a href="blog.html">Blog</a> |
+            
+`;
 
 function getMenu() {
     return menu
 }
+
+const menuBlog = `
+            <a href="blog.html">Мой Блог</a> |
+            <a href="index.html">Магазин</a> |
+            <a href="#" class="login-button" name="link">Вход</a>
+`;
+function getMenuBlog() {
+    return menuBlog
+}
+
+function init() {
+    let element = document.getElementById("home-link");
+    element.addEventListener("click", ()=>{
+        alert("Переход на главную страницу");
+    });
+}
+
+$(document).ready(()=>{
+    console.log("jQuery is loaded");
+});
