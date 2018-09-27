@@ -41,21 +41,60 @@ function getMenu() {
 }
 
 const menuBlog = `
-            <a href="blog.html">Мой Блог</a> |
-            <a href="index.html">Магазин</a> |
-            <a href="#" class="login-button" name="link">Вход</a>
+            <div class="menu-display">
+            <div><a href="blog.html">Мой Блог</a></div>
+            <div><a href="index.html">Магазин</a></div>
+            <div><a href="#" class="login-button" name="link">Вход</a></div>
+            </div>
 `;
 function getMenuBlog() {
     return menuBlog
 }
 
-function init() {
+/*function init() {
     let element = document.getElementById("home-link");
     element.addEventListener("click", ()=>{
         alert("Переход на главную страницу");
     });
-}
+}*/
+const modalWindow = {
+    BLUR_CLASS: "blur",
+    modal: '',
+    contentBlock: '',
+
+    init:(openButton)=>{
+        modalWindow.modal = $(".modal");
+        modalWindow.contentBlock = $("div.content");
+        modalWindow.initOpenListener(openButton);
+        modalWindow.initCloseListener();
+    },
+
+    initOpenListener:(openButton)=>{
+        openButton.click(()=>{
+            modalWindow.modal.fadeIn(500);
+            modalWindow.contentBlock.addClass(modalWindow.BLUR_CLASS);
+        });
+    },
+
+    initCloseListener:()=>{
+        $(".modal>span").click(()=>{
+            modalWindow.modal.fadeOut(800);
+            modalWindow.contentBlock.removeClass(modalWindow.BLUR_CLASS);
+        });
+    }
+};
+const sliderWidget = {
+    components:'',
+    init: ()=>{
+        sliderWidget.components = $(".menu-display>div");
+        sliderWidget.components.click((e)=>{
+            let target = $(e.currentTarget);
+            target.find("p").slideToggle("fast");
+        });
+    }
+};
 
 $(document).ready(()=>{
-    console.log("jQuery is loaded");
+    modalWindow.init($(".login-button"));
+    sliderWidget.init();
 });

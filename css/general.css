@@ -5,6 +5,13 @@ body {
     margin: 0; padding: 0;
     color: #5d5d5d;
 }
+div.content {
+    transition: .3s;
+}
+div.content.blur {
+    filter: blur(10px);
+    transition: .5s;
+}
 div.content>div {
     width: 1000px; min-height: 500px;
     margin: 0 auto; padding: 0;
@@ -24,6 +31,18 @@ div.page-header>h1 {
 div.menu {
     padding: 10px;
     border-bottom: 2px solid #ccb9f6;
+}
+.menu-display>div {
+    background-color: #E9E7F7;
+    border-radius: 3px;
+    padding: 3px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 700ms;
+}
+.menu-display>div:hover {
+    background-color: #e4e2f2;
+    transition: 300ms;
 }
 div.page-content {
     padding: 10px;
@@ -47,4 +66,61 @@ div.page-bottom>div.adres {
 }
 img {
     box-shadow: 0 0 15px #5d5d5d;
+}
+.modal {
+    display: none;
+    position: fixed; z-index: 1;
+    top: 50%; left: 50%;
+    width: 200px; height: 200px;
+    margin-left: -100px; margin-top: -100px;
+    padding: 10px; border-radius: 5px;
+    box-shadow: 0 0 40px #5d5d5d;
+    background: rgba(255, 255, 255, 0.95);
+}
+.modal>div:first-child {
+    text-align: center;
+}
+.modal>span {
+    position: absolute;
+    top: 10px; right: 10px;
+    font-weight: bolder;
+    color: #53161b;
+    cursor: pointer;
+}
+.modal>div.modal_body>form>input[type="text"],
+.modal>div.modal_body>form>input[type="password"]{
+    padding: 5px;
+    margin-top: 5px;
+    width: 94%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #efefef;
+}
+.modal>div.modal_body>form>input[type="text"]:focus,
+.modal>div.modal_body>form>input[type="password"]:focus{
+    box-shadow: 0 0 5px #9ecaff;
+}
+
+input.btn {
+    padding: 5px;
+    border: 1px solid #efefef; border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .4s;
+}
+input.btn.btn-default {
+    background-color: #cbcbcb;
+    color: #686868;
+}
+input.btn.btn-primary {
+    background-color: #5588cb;
+    color: #f0f0f0;
+}
+input.btn.btn-default:hover {
+    background-color: #a2a2a2;
+    transition: .2s;
+}
+input.btn.btn-primary:hover {
+    background-color: #415f92;
+    transition: .2s;
 }
