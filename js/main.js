@@ -85,16 +85,18 @@ const modalWindow = {
 };
 const sliderWidget = {
     components:'',
-    init: ()=>{
-        sliderWidget.components = $(".menu-display>div");
+    init: (element)=>{
+        sliderWidget.components = element;
         sliderWidget.components.click((e)=>{
             let target = $(e.currentTarget);
-            target.find("p").slideToggle("fast");
+            target.find("div").slideToggle("fast");
         });
     }
 };
 
 $(document).ready(()=>{
     modalWindow.init($(".login-button"));
-    sliderWidget.init();
+    sliderWidget.init($(".slider-questions>div"));
+    sliderWidget.init($(".slider-info>div"));
+    sliderWidget.init($(".slider-qualities>div"));
 });

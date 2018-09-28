@@ -44,6 +44,108 @@ div.menu {
     background-color: #e4e2f2;
     transition: 300ms;
 }
+.slider-questions>div {
+    border-radius: 4px;
+    margin-top: 10px;
+    background-color: #ccb9f6;
+    padding: 10px;
+    cursor: pointer;
+}
+.slider-questions>div>div {
+    border-radius: 4px;
+    padding: 10px; margin-top: 10px;
+}
+.slider-questions>div:nth-child(1)>div {
+    background-color: #9B90B7;
+    color: #fff;
+}
+.slider-questions>div:nth-child(2) {
+    background-color: #0000ff;
+    color: #fff;
+}
+.slider-questions>div:nth-child(2)>div {
+    background-color: #9ca8e9;
+    color: #fff;
+}
+.slider-questions>div:nth-child(3) {
+    background-color: #00e7ff;
+
+}
+.slider-questions>div:nth-child(3)>div {
+    background-color: #009EAF;
+    color: #fff;
+}
+.slider>div>div {
+    display: none;
+}
+.slider-info>div {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: Arial, serif;
+    background-color: #7c1d25;
+    color: #fff;
+    cursor: pointer;
+}
+.slider-info>div>div {
+    border-radius: 4px;
+    padding: 10px; margin-top: 10px;
+}
+.slider-info>div:nth-child(1)>div {
+    background-color: #D2243F;
+    color: #fff;
+}
+.slider-info>div:nth-child(2) {
+    background-color: #657438;
+    color: #fff;
+}
+.slider-info>div:nth-child(2)>div {
+    background-color: #d8e9b1;
+    color: #5d5d5d;
+}
+.slider-info>div:nth-child(3) {
+    background-color: #2898a4;
+
+}
+.slider-info>div:nth-child(3)>div {
+    background-color: #00eeff;
+    color: #5d5d5d;
+}
+.slider-qualities>div {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: "Times New Roman", serif;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
+.slider-qualities>div>div {
+    border-radius: 4px;
+    padding: 10px; margin-top: 10px;
+}
+.slider-qualities>div:nth-child(1)>div {
+    background-color: #ffa1c3;
+    color: #5d5d5d;
+}
+.slider-qualities>div:nth-child(2) {
+    background-color: #2d676e;
+    color: #fff;
+}
+.slider-qualities>div:nth-child(2)>div {
+    background-color: #b7c895;
+    color: #5d5d5d;
+}
+.slider-qualities>div:nth-child(3) {
+    background-color: #fffc4e;
+    color: #5d5d5d;
+
+}
+.slider-qualities>div:nth-child(3)>div {
+    background-color: #fdd67c;
+    color: #5d5d5d;
+}
+
 div.page-content {
     padding: 10px;
     text-align: justify;
